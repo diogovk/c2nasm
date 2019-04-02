@@ -5,7 +5,7 @@ help(){
   echo "usage: $1 <sourcefile.c>"
   exit 0
 }
-[ -z "$1" ] || [ "$1" == "-h" ] && help "$(dirname "$0")"
+[ -z "$1" ] || [ "$1" == "-h" ] && help "$(basename "$0")"
 
 C_FILE="$1"
 O_FILE="$C_FILE.o"
